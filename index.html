@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Tool AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Study Tool AI</h1>
+        <p>Upload a PDF or enter a YouTube URL to get notes, flashcards, and quizzes!</p>
+        <form id="uploadForm">
+            <input type="file" id="fileInput" accept=".pdf">
+            <input type="text" id="youtubeUrl" placeholder="Enter YouTube URL (e.g., https://www.youtube.com/watch?v=...)">
+            <button type="submit">Process</button>
+        </form>
+        <div id="output">
+            <div id="notes"></div>
+            <div id="flashcards"></div>
+            <div id="quiz"></div>
+        </div>
+        <h2>Chatbot</h2>
+        <form id="chatbotForm">
+            <input type="text" id="chatbotInput" placeholder="Ask a question about the content">
+            <button type="submit">Ask</button>
+        </form>
+        <div id="chatbotOutput"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
